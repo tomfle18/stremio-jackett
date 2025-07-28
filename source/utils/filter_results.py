@@ -124,7 +124,7 @@ def filter_items(items, media, config):
         logger.info(f"Item count changed to {len(items)}")
 
     # TODO: is titles[0] always the correct title? Maybe loop through all titles and get the highest match?
-    items = remove_non_matching_title(items, media.titles)
+    # items = remove_non_matching_title(items, media.titles)
 
     for filter_name, filter_instance in filters.items():
         try:
